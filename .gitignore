@@ -14,3 +14,4 @@
 .cxx
 local.properties
 /app/src/main/java/com/example/segundoexamen/MyFirebaseMessagingService.kt
+/app/src/main/assets/firebase-adminsdk.json
