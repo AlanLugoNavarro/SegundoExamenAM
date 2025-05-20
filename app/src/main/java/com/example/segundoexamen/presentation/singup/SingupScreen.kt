@@ -149,7 +149,7 @@ fun SingupScreen(navHostController:NavHostController, auth: FirebaseAuth, db:Fir
             if(error){
                 return@Button
             }
-            auth.createUserWithEmailAndPassword(email.lowercase(), password).addOnCompleteListener { task ->
+            auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
                 if(task.isSuccessful){
                  //Completado
                     carga = false
@@ -174,8 +174,6 @@ fun SingupScreen(navHostController:NavHostController, auth: FirebaseAuth, db:Fir
                             carga = true
                         }
                     }
-
-
                 }else{
                     Log.i("Admin", "Error al registrar la autenticacion del usuario")
                 }
